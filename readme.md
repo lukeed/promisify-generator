@@ -1,21 +1,21 @@
-# promisfy-generator [![Build Status](https://travis-ci.org/lukeed/promisfy-generator.svg?branch=master)](https://travis-ci.org/lukeed/promisfy-generator)
+# promisify-generator [![Build Status](https://travis-ci.org/lukeed/promisify-generator.svg?branch=master)](https://travis-ci.org/lukeed/promisify-generator)
 
 > Convert a Generator into Promise~!
 
-Lightweight utility to promisfy a generator, without the need for an entire library like [`bluebird`](https://github.com/petkaantonov/bluebird) or [`co`](https://github.com/tj/co).
+Lightweight utility to promisify a generator, without the need for an entire library like [`bluebird`](https://github.com/petkaantonov/bluebird) or [`co`](https://github.com/tj/co).
 
 
 ## Install
 
 ```sh
-$ npm install --save promisfy-generator
+$ npm install --save promisify-generator
 ```
 
 
 ## Usage
 
 ```js
-const pgen = require('promisfy-generator');
+const pgen = require('promisify-generator');
 
 function * foo() {
   let idx = 0;
@@ -56,7 +56,7 @@ pBar().then().catch(console.error);
 Type: `GeneratorFunction`<br>
 Returns: `Function`
 
-The [Generator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator) function to promisfy.
+The [Generator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator) function to promisify.
 
 A normal `Function` is returned, which invokes a `Promise` when called. Any arguments passed to this function will be passed to your orginal Generator.
 
