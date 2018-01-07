@@ -1,6 +1,8 @@
+{
   "name": "promisify-generator",
   "version": "0.0.0",
   "repository": "lukeed/promisify-generator",
+  "description": "Convert a Generator into Promise~!",
   "main": "lib/index.js",
   "license": "MIT",
   "files": [
@@ -17,6 +19,12 @@
   "scripts": {
     "test": "tape test/*.js | tap-spec"
   },
+  "keywords": [
+    "generator",
+    "generator-function",
+    "promisify",
+    "promise"
+  ],
   "devDependencies": {
     "tap-spec": "^4.1.1",
     "tape": "^4.6.3"
