@@ -1,6 +1,6 @@
 {
   "name": "promisify-generator",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "repository": "lukeed/promisify-generator",
   "description": "Convert a Generator into Promise~!",
   "main": "lib/index.js",
